@@ -15,13 +15,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wc_print_notices(); ?>
 
+	<!-- <div class="bmg-l-wrapper js-bmg-l-wrapper">
+		<div class="bmg-l-layout--s">
+			<h1>Forgot your password?</h1>
+			<p>Enter your email address and we'll send you a link to reset your password.</p>
+			<div class="bmg-b-form">
+				<div class="bmg-b-form__main">
+					<form class="new_request" id="new_request" action="/forgot_password" accept-charset="UTF-8" method="post">
+						<input name="utf8" value="✓" type="hidden">
+						<fieldset>
+							<div class="bmg-b-form__control-group">
+								<div class="bmg-b-form__control-group-inner">
+									<label class="bmg-b-form__field-name" for="request_email">Email</label>
+									<input class="js-user-email" name="request[email]" id="request_email" type="text">
+								</div>
+							</div>
+						</fieldset>
+						<div class="bmg-b-form__submit-bottom--with-lead">
+							<input name="commit" value="Submit" class="bmg-btn--primary" type="submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
 <form method="post" class="lost_reset_password">
 
 	<?php if( 'lost_password' == $args['form'] ) : ?>
 
 		<p><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'woocommerce' ) ); ?></p>
 
-		<p class="form-row form-row-first"><label for="user_login"><?php _e( 'Username or email', 'woocommerce' ); ?></label> <input class="input-text" type="text" name="user_login" id="user_login" /></p>
+		<p class="form-row form-row-first">
+			<label for="user_login">
+				<?php _e( 'Username or email', 'woocommerce' ); ?>
+			</label> 
+			<input class="input-text" type="text" name="user_login" id="user_login" /></p>
 
 	<?php else : ?>
 

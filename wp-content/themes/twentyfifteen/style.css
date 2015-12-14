@@ -497,7 +497,7 @@ select::-ms-expand{
 
 }
 
-.bmg-b-form .bmg-b-form__field-text,.bmg-b-form input[type=password],.bmg-b-form input[type=text],.bmg-b-form textarea{
+.bmg-b-form .bmg-b-form__field-text,.bmg-b-form input[type=password],.bmg-b-form input[type=text], .bmg-b-form input[type=email], .bmg-b-form textarea{
 	width:100%;
 	padding:0;
 	border:none;

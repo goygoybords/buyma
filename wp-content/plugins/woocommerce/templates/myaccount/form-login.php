@@ -13,13 +13,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<?php wc_print_notices(); ?>
-
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <div class="bmg-l-wrapper js-bmg-l-wrapper">
 	<div class="bmg-l-layout--s">
+		<h1>Login</h1>
+		<div class="error-id" messge="error_explanation">
+			<?php wc_print_notices(); ?>
+		</div>
 		<div class="bmg-b-form">
+
 			<div class="bmg-b-form__main">
 				<form id="new_login_form" class="new_login_form" method="post" accept-charset="UTF-8" >
 					<?php do_action( 'woocommerce_login_form_start' ); ?>
@@ -29,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<div class="bmg-b-form__control-group">
 							<div class="bmg-b-form__control-group-inner">
 								<label class="bmg-b-form__field-name" for="login_form_email">Email</label>
-								<input id = "login_form_email" type="text" class="input-text" name="username" id="login_form_email" 
+								<input id = "login_form_email" type="email" class="input-text" name="username" id="login_form_email" 
 								value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
 							</div>
 						</div>

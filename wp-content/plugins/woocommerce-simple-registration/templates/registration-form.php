@@ -9,12 +9,14 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-
 ?>
-<?php wc_print_notices(); ?>
+
 <div class="bmg-l-wrapper js-bmg-l-wrapper">
 	<div class="bmg-l-layout--s">
 		<h1>Create BirthdayPress account</h1>
+		<div class="error-id" messge="error_explanation">
+			<?php wc_print_notices(); ?>
+		</div>
 		<?php do_action( 'woocommerce_register_form_start' ); ?>
 		<div class="bmg-b-form">
 			<div class="bmg-b-form__main">
