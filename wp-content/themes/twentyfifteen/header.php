@@ -57,7 +57,12 @@
 					<li class="bmg-l-header__account">
 						<?php 
 							if(is_user_logged_in()) 
-								echo '<a class="bmg-btn--secondary" href="'.wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'">Log Out</a>';
+							{
+								global $current_user;
+     							 get_currentuserinfo();
+								echo '<a class="bmg-btn--secondary" href="'.
+								get_permalink(9).'">'.$current_user->user_email.'</a>';
+							}
 							else
 								echo '<a class="bmg-btn--secondary" href="'.get_permalink(9).'">Login</a>';
 						?>

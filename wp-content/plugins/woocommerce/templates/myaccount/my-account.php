@@ -13,7 +13,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 wc_print_notices(); ?>
 
-<p class="myaccount_user">
+<?php do_action( 'woocommerce_before_my_account' ); ?>
+		<div class="bmg-l-wrapper js-bmg-l-wrapper">
+			<div class="bmg-l-layout--full my">
+				<?php get_sidebar('user');  ?>
+			</div>
+		</div>
+
+ <p class="myaccount_user">
 	<?php
 	printf(
 		__( 'Hello <strong>%1$s</strong> (not %1$s? <a href="%2$s">Sign out</a>).', 'woocommerce' ) . ' ',
@@ -36,3 +43,4 @@ wc_print_notices(); ?>
 <?php wc_get_template( 'myaccount/my-address.php' ); ?>
 
 <?php do_action( 'woocommerce_after_my_account' ); ?>
+ 
