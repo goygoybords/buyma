@@ -68,7 +68,9 @@
 						?>
 					</li>
 					<li class="bmg-l-header__account">
+						<?php if(!is_user_logged_in()) { ?>
 						<a class="bmg-b-text-color--keycolor" href="<?php echo get_permalink(18); ?>">Register</a>
+						<?php } ?>
 					</li>
 					<li>
 						<a href="<?php echo get_permalink(7); ?>">

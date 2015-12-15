@@ -7,9 +7,8 @@
 			<div class="js-my-menu my-menus">
 				<p class="my-menu__ttl">My Menu</p>
 				<ul class="my-menu">
-					<li >
-						<a href="<?php wc_customer_edit_account_url(); ?>">Account Settings</a>
-					</li>
+
+					<li><a href="<?php echo wc_customer_edit_account_url(); ?>">Account Settings</a></li>
 				</ul>
 				<ul class="my-menu">
 					<li><a href="/my/purchases">Order History</a></li>
