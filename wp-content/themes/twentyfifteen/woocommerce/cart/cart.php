@@ -150,13 +150,5 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</div>
 		</div>
 	</div>
-	<script type="application/json" class="js-shopping-bag-data">{"line_items":[{"id":"785704f0-39c4-456a-8f0e-d2e2c6eb0083","product_id":"785704f0-39c4-456a-8f0e-d2e2c6eb0083","product":{"id":"785704f0-39c4-456a-8f0e-d2e2c6eb0083","name":"BRUNELLO CUCINELLI [Sweaters] 1c/2s"},"shipping_methods":[{"id":"05598922-f0ff-4a05-8d9f-2b507a4cdcfa","name":"EMS with insurance","explanation":"","cost":"$0.00 USD","shipping_days_from":5,"shipping_days_to":7,"selected":true}],"quantity":1,"shipping_method_id":"05598922-f0ff-4a05-8d9f-2b507a4cdcfa","product_color_size_variation_id":"904689ec-1848-4854-964d-172d2a747f81","comment":""}]}</script>
-	<script type="text/javascript" language="JavaScript">&lt;!--
-      var mk_purchase_price = "59996";
-      var mk_item = ["785704f0-39c4-456a-8f0e-d2e2c6eb0083"];
-      var mk_item_price = ["59996"];
-      var mk_qty = ["1"];
-          --&gt;
-	</script>
 	</div>
 	

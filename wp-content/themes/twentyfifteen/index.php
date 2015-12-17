@@ -22,35 +22,35 @@ get_header(); ?>
 				<h1 class="site-keyword">A new online personal shopping experience</h1>
 				<div class="top-bnr--devide2">
 					<div class="top-bnr--img">
-						<a href="/items/find/women/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/women.jpg" alt="WOMEN">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="/items/find/men/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/men.jpg" alt="MEN">
 						</a>
 					</div>
 				</div>
 				<div class="top-bnr--devide3">
 					<div class="top-bnr--img">
-						<a href="/items/find/women/bags/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/bags.jpg" alt="WOMEN bag">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="/items/find/women/shoes/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/shoes.jpg" alt="WOMEN shoes">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="/items/find/women/outerwear/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/jacket.jpg" alt="WOMEN outer">
 						</a>
 					</div>
 				</div>
 				<h2 class="top-bnr--ttl">
-					<a href="/aboutbuyma/">
+					<a href="">
 						<img src="<?php bloginfo('template_url');?>/images/about.jpg" alt="What is BUYMA">
 					</a>
 				</h2>
@@ -58,17 +58,17 @@ get_header(); ?>
 			<div class="footer-bnr--wrap">
 				<div class="footer-bnr--devide3">
 					<div class="footer-bnr--img">
-						<a href="/aboutbuyma/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/personal.jpg" alt="Personal Service">
 						</a>
 					</div>
 					<div class="footer-bnr--img">
-						<a href="/aboutbuyma/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/global.jpg" alt="Global Shopping with Local Prices">
 						</a>
 					</div>
 					<div class="footer-bnr--img">
-						<a href="/aboutbuyma/">
+						<a href="">
 							<img src="<?php bloginfo('template_url');?>/images/style.jpg" alt="Style Inspirations ">
 						</a>
 					</div>
