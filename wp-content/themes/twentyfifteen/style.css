@@ -2721,7 +2721,8 @@ body{
 	margin-right:2.35765%;
 	width:23.23176%;
 	padding:1.4rem;
-	border:2px solid #fff
+	/*border:2px solid #fff*/
+	border: 2px #303030;
 }
 
 .bmg-l-footer__country:last-child{

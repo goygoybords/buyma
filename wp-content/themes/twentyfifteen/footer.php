@@ -13,7 +13,7 @@
 			<div class="bmg-l-footer__inner">
 				<div class="bmg-l-footer__nav">
 					<div class="bmg-l-footer__country">
-						<ul>
+						<!-- <ul>
 							<li>
 								<a class="bmg-l-footer__flag js-user-location-modal" href="javascript:void(0);">
 									<img width="18" src="/assets/images/flag/phl-a2a1a5476b.png" alt="Philippines">Philippines
@@ -23,7 +23,7 @@
 								$USD
 								<a class="bmg-l-footer__country-edit js-user-location-modal" href="javascript:void(0);">EDIT</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 					<nav class="verticalmenu">
 						<ul>
