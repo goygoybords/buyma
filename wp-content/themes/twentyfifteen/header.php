@@ -46,7 +46,8 @@
 			</a>
 			<?php get_product_search_form(); //get_search_form(); ?>
 			<a class="bmg-l-header__list-btn js-header-list-btn" href="javascript:void(0);">
-				<i class="bmg-c-icon--list"></i>
+				<!-- <i class="bmg-c-icon--list"></i> -->
+				<i class="fa fa-list fa-2x"></i>
 			</a>
 			<nav class="bmg-l-header__menu">
 				<ul>
