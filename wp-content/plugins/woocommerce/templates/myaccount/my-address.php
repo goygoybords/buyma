@@ -51,7 +51,6 @@ $col = 1;
 						if ( ! $formatted_address )
 							_e( 'You have not set up this type of address yet.', 'woocommerce' );
 					?>
-
 					<h2><?php echo $title; ?></h2>
 					<fieldset>
 						<div class="bmg-b-form__control-group--disabled">
@@ -80,9 +79,9 @@ $col = 1;
 					<?php endforeach; ?>
 					<?php if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shipping' ) !== 'no' ) echo '</div>'; ?>
 				</div>
-				<div class="bmg-b-form__main">
+				<!-- <div class="bmg-b-form__main">
 					<?php wc_get_template( 'myaccount/my-orders.php', array( 'order_count' => $order_count ) ); ?>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
