@@ -41,7 +41,11 @@ get_header();
 									<ul class="js-item-images" >
 										<li>
 											<div class="item-image">
-												<?php woocommerce_show_product_images(); ?>
+												<?php 
+													the_post_thumbnail();
+													//woocommerce_show_product_images();
+													//do_action( 'woocommerce_before_single_product_summary' );
+												?>
 											</div>
 										</li>
 									</ul>
@@ -215,11 +219,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<script type="text/javascript" language="JavaScript">
-				&lt;!--
-				var mk_dtl_item = "75c90161-1328-4858-9e27-3a3e03a53ff8";
-				--&gt;
-			</script>
+
 		<div class="footer-bnr--wrap">
 			<div class="footer-bnr--devide3">
 				<div class="footer-bnr--img">

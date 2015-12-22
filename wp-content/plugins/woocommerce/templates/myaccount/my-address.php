@@ -79,9 +79,6 @@ $col = 1;
 					<?php endforeach; ?>
 					<?php if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shipping' ) !== 'no' ) echo '</div>'; ?>
 				</div>
-				<!-- <div class="bmg-b-form__main">
-					<?php wc_get_template( 'myaccount/my-orders.php', array( 'order_count' => $order_count ) ); ?>
-				</div> -->
 			</div>
 		</div>
 
