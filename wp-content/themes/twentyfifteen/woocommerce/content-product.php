@@ -45,10 +45,15 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 <li>
 	<a href="<?php the_permalink(); ?>" class="js-ga-item-click">
 		<div class="sr-item-picture">
-			<!-- <img src="https://s3.amazonaws.com/image.buyma.com/imgdata/item/151104/0018506544/428_1.jpg" 
-			class="sr-item-picture__item"> -->
-			
-			<?php 	do_action( 'woocommerce_before_shop_loop_item_title' ); //the_post_thumbnail(); ?>
+			<?php 
+				$post_thumbnail_id = get_post_thumbnail_id();
+        		$post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );
+        	?>
+            <img title="image title" alt="thumb image" 
+            class="wp-post-image" 
+            src="<?php echo $post_thumbnail_url; ?>" 
+            style="width:150px; height:150px;">
+			<?php //do_action( 'woocommerce_before_shop_loop_item_title' ); //the_post_thumbnail(); ?>
 		</div>
 		<div class="sr-item-name"><?php the_title(); ?></div>
 	</a>
