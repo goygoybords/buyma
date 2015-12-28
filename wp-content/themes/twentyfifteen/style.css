@@ -521,7 +521,7 @@ select::-ms-expand{
 }
 
 input[type=checkbox],input[type=radio]{
-	display:none
+	display:block;
 }
 
 .bmg-b-form__textarea::-webkit-input-placeholder{
