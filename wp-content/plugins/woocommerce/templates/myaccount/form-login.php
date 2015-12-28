@@ -50,7 +50,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<div>
 							<?php wp_nonce_field( 'woocommerce-login' ); ?>
 							<input id="login_form_remember_me" type="checkbox" 
-							name="rememberme" value="forever" checked="checked" value="1">
+							name="rememberme" value="forever" 
+							checked="checked" value="1" style = "display:none;">
 							<label class="bmg-b-form__check-label" for="login_form_remember_me">
 								<?php _e( 'Remember me', 'woocommerce' ); ?>
 							</label>		

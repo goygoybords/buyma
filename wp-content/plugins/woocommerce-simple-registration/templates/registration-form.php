@@ -39,8 +39,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					</fieldset>
 					<p class="bmg-u-mt10">
 						<input type="hidden" value="0" name="user[subscription]">
-						<input type="checkbox" id="user_subscription" name="user[subscription]" checked="checked" value="1">
-						<label for="user_subscription" class="bmg-b-form__check-label">I want to receive newsletters and updates from Buyma</label>
+						<input type="checkbox" id="user_subscription" name="user[subscription]" 
+						checked="checked" value="1" style = "display:none;">
+						<label for="user_subscription" class="bmg-b-form__check-label">
+							I want to receive newsletters and updates from Buyma
+						</label>
 					</p>
 					<p class="bmg-b-text-size--small bmg-u-mt10 bmg-b-text-color--gray bmg-b-text-bold">By clicking Register, you confirm that you accept our Terms of Use and Privacy Policy.</p>
 					<div class="bmg-b-form__submit-bottom--with-lead">

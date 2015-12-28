@@ -29,7 +29,7 @@ if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shippi
 $col = 1;
 ?>
 	<div class="bmg-l-layout--full__main--s">
-			<h1><?php echo $page_title; ?></h1>
+			<h1><?php echo "Billing Details"; ?></h1>
 			<div class="bmg-b-form">
 				<div class="bmg-b-form__main">
 					<?php if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shipping' ) !== 'no' ) echo '<div class="col2-set addresses">'; ?>
