@@ -14,7 +14,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 ?>
-
 	<div class="bmg-l-wrapper js-bmg-l-wrapper">
 		<div class="bmg-l-layout--full js-shopping-bag">
 			<h1>Your Shopping Bag</h1>
