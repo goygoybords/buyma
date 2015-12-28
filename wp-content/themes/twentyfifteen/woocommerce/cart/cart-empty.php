@@ -10,11 +10,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
-wc_print_notices();
-
 ?>
 	<div class="bmg-l-wrapper js-bmg-l-wrapper">
+		<span><?php wc_print_notices(); ?></span>
 		<div class="bmg-l-layout--full js-shopping-bag">
 			<h1>Your Shopping Bag</h1>
 			<?php do_action( 'woocommerce_cart_is_empty' ); ?>

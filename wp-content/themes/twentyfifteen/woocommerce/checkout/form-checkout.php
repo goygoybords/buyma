@@ -31,16 +31,8 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 				<div class="bmg-l-layout--full__main">
 					<?php if ( sizeof( $checkout->checkout_fields ) > 0 ) : ?>
 					<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
-
 					<div class="js-checkout-form-view">
 						<?php do_action( 'woocommerce_checkout_billing' ); ?>
-						<!-- <form class="new_checkout_form" id="new_checkout_form" action="/checkout/shipping" accept-charset="UTF-8" method="post">
-							<input name="utf8" value="✓" type="hidden">
-							<input name="_method" value="put" type="hidden">
-							<input name="authenticity_token" value="QyIWmqJDddMCwZMefU2zoS08G5JBmBPH7cNqO57/o1Nltf8L2vztx5XA/wWFMN9JMcjM/JtYXnClccoBEMR5jg==" type="hidden">
-							<input name="checkout_form[shipping_address_id]" id="checkout_form_shipping_address_id" type="hidden">
-							<input name="checkout_form[use_as_billing_address]" id="checkout_form_use_as_billing_address" type="hidden">
-						</form> -->
 					</div>
 					<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 					<?php endif; ?>
