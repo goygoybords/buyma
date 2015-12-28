@@ -22,7 +22,7 @@
 	<link href="<?php bloginfo('template_url'); ?>/css/top-bundle.css" media="screen" rel="stylesheet">
 	<?php if(is_shop() || is_product_category()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/shop.css" type="text/css" rel="stylesheet" />
-	<?php } else if(is_cart()) { ?>
+	<?php } else if(is_cart() || is_checkout()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/cart.css" type="text/css" rel="stylesheet" />
 	<?php } else if(is_product()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/item-detail.css" type="text/css" rel="stylesheet" />
