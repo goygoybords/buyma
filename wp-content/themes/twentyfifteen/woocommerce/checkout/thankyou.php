@@ -1,69 +1,36 @@
 <?php
 /**
- * Thankyou page
+ * Thank you page
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.2.0
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
-if ( $order ) : ?>
-
-	<?php if ( $order->has_status( 'failed' ) ) : ?>
-
-		<p><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction.', 'woocommerce' ); ?></p>
-
-		<p><?php
-			if ( is_user_logged_in() )
-				_e( 'Please attempt your purchase again or go to your account page.', 'woocommerce' );
-			else
-				_e( 'Please attempt your purchase again.', 'woocommerce' );
-		?></p>
-
-		<p>
-			<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'woocommerce' ) ?></a>
-			<?php if ( is_user_logged_in() ) : ?>
-			<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php _e( 'My Account', 'woocommerce' ); ?></a>
-			<?php endif; ?>
-		</p>
-
-	<?php else : ?>
-
-		<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
-
-		<ul class="order_details">
-			<li class="order">
-				<?php _e( 'Order Number:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_order_number(); ?></strong>
-			</li>
-			<li class="date">
-				<?php _e( 'Date:', 'woocommerce' ); ?>
-				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
-			</li>
-			<li class="total">
-				<?php _e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_formatted_order_total(); ?></strong>
-			</li>
-			<?php if ( $order->payment_method_title ) : ?>
-			<li class="method">
-				<?php _e( 'Payment Method:', 'woocommerce' ); ?>
-				<strong><?php echo $order->payment_method_title; ?></strong>
-			</li>
-			<?php endif; ?>
-		</ul>
-		<div class="clear"></div>
-
-	<?php endif; ?>
-
-	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
-	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
-
-<?php else : ?>
-
-	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
-
-<?php endif; ?>
+?>
+	<div class="bmg-l-wrapper js-bmg-l-wrapper">
+		<div class="bmg-l-layout--full js-shopping-bag">
+			<!-- <h1>Your Shopping Bag</h1> -->
+			<p>
+				<a class="sb-products-link" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+					<span class="translation_missing" title="translation missing: en.continue_shopping">
+						<?php _e( 'Return To Shop', 'woocommerce' ) ?>
+					</span>
+				</a>
+			</p>
+			<div class="bmg-l-layout--full__main">
+				<section class="bmg-c-panel">
+					<div class="bmg-c-panel__main">
+						<h2 class="bmg-u-mb0">
+							<span class="translation_missing" title="translation missing: en.empty_shopping_bag">
+								<?php echo "Your Order Has Been Processed."?>
+							</span>
+						</h2>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>

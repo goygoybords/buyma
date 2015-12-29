@@ -11,7 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-wc_print_notices(); ?>
+//wc_print_notices(); 
+?>
 
 <?php do_action( 'woocommerce_before_my_account' ); ?>
 		<div class="bmg-l-wrapper js-bmg-l-wrapper">
