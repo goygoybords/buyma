@@ -11,26 +11,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-wc_print_notices();
+//wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_before_cart_contents' ); ?>
-	<?php
-		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) 
-		{
-			$_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-			$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 
-			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) 
-			{
-				?>
 		<div class="bmg-l-wrapper js-bmg-l-wrapper">
 		<div class="bmg-l-layout--full js-shopping-bag">
 		<h1>Your Shopping Bag</h1>
 		<p><a href="<?php echo get_permalink(6); ?>" class="sb-products-link">
 			<span title="translation missing: en.continue_shopping" class="translation_missing">Continue Shopping</span></a>
 		</p>
+		
 		<div class="bmg-l-layout--full__main">
+		<?php
+			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) 
+			{
+			$_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+			$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+
+			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) 
+			{
+		?>
 			<form method="post" action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" accept-charset="UTF-8" class="js-shopping-bag-form">
 				<section data-product-id="785704f0-39c4-456a-8f0e-d2e2c6eb0083" class="sb-section js-line-item">
 					<div class="sb-section__head">
@@ -131,9 +133,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 				</section>
 				<input type="hidden" id="shopping_bag_line_items_attributes_0_id" name="shopping_bag[line_items_attributes][0][id]" value="0ab95dc6-8d1c-4f63-9c13-a2183611bd28">
 			</form>
-		</div>
-			<?php } ?>
+				<?php } ?>
 		<?php } ?>
+		</div>
+		
 		<div class="bmg-l-layout--full__sidebar js-shopping-bag-summary">
 			<h2>Shopping Bag Summary</h2>
 			<div class="sb-summary-main">
