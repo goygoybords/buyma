@@ -23,29 +23,29 @@ get_header(); ?>
 				<div class="top-bnr--devide2">
 					<div class="top-bnr--img">
 						<a href="">
-							<img src="<?php bloginfo('template_url');?>/images/women.jpg" alt="WOMEN">
+							<img src="<?php bloginfo('template_url');?>/images/cake.jpg" alt="CAKE">
 						</a>
 					</div>
 					<div class="top-bnr--img">
 						<a href="">
-							<img src="<?php bloginfo('template_url');?>/images/men.jpg" alt="MEN">
+							<img src="<?php bloginfo('template_url');?>/images/sweets.jpg" alt="SWEETS">
 						</a>
 					</div>
 				</div>
 				<div class="top-bnr--devide3">
 					<div class="top-bnr--img">
 						<a href="">
-							<img src="<?php bloginfo('template_url');?>/images/bags.jpg" alt="WOMEN bag">
+							<img src="<?php bloginfo('template_url');?>/images/gift.jpg" alt="GIFT">
 						</a>
 					</div>
 					<div class="top-bnr--img">
 						<a href="">
-							<img src="<?php bloginfo('template_url');?>/images/shoes.jpg" alt="WOMEN shoes">
+							<img src="<?php bloginfo('template_url');?>/images/macaron.jpg" alt="MACARON">
 						</a>
 					</div>
 					<div class="top-bnr--img">
 						<a href="">
-							<img src="<?php bloginfo('template_url');?>/images/jacket.jpg" alt="WOMEN outer">
+							<img src="<?php bloginfo('template_url');?>/images/matcha.jpg" alt="MATCHA">
 						</a>
 					</div>
 				</div>
