@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 29, 2015 at 02:21 PM
+-- Generation Time: Jan 08, 2016 at 03:01 PM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `comment_date_gmt` (`comment_date_gmt`),
   KEY `comment_parent` (`comment_parent`),
   KEY `comment_author_email` (`comment_author_email`(10))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `wp_comments`
@@ -86,7 +86,9 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (13, 61, 'WooCommerce', '', '', '', '2015-12-29 01:35:51', '2015-12-29 01:35:51', 'Awaiting BACS payment Order status changed from Pending Payment to On Hold.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
 (14, 62, 'WooCommerce', '', '', '', '2015-12-29 02:12:55', '2015-12-29 02:12:55', 'Awaiting BACS payment Order status changed from Pending Payment to On Hold.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
 (15, 64, 'WooCommerce', '', '', '', '2015-12-29 06:08:54', '2015-12-29 06:08:54', 'Awaiting cheque payment Order status changed from Pending Payment to On Hold.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
-(16, 64, 'WooCommerce', '', '', '', '2015-12-29 06:08:55', '2015-12-29 06:08:55', 'Item #52 stock reduced from 100 to 99.', 0, '1', 'WooCommerce', 'order_note', 0, 0);
+(16, 64, 'WooCommerce', '', '', '', '2015-12-29 06:08:55', '2015-12-29 06:08:55', 'Item #52 stock reduced from 100 to 99.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(17, 65, 'WooCommerce', '', '', '', '2016-01-04 05:27:25', '2016-01-04 05:27:25', 'Payment to be made upon delivery. Order status changed from Pending Payment to Processing.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(18, 65, 'WooCommerce', '', '', '', '2016-01-04 05:27:26', '2016-01-04 05:27:26', 'Item #50 stock reduced from 99 to 98.', 0, '1', 'WooCommerce', 'order_note', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -125,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1329 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1375 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -226,8 +228,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (94, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (96, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
-(98, 'cron', 'a:10:{i:1451370477;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1451373240;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1451399699;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1451403319;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1451433600;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1451442899;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1451452307;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1451453025;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1451952000;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
-(109, '_transient_random_seed', '9d0cbf73be6efd6d884173c9c23af1a3', 'yes'),
+(98, 'cron', 'a:10:{i:1452150840;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1452152995;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1452177299;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1452180919;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1452211200;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1452220499;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1452229907;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1452230625;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1454587200;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
+(109, '_transient_random_seed', 'c4c9afcff5b298b5d3a6ab95e32654d3', 'yes'),
 (122, 'recently_activated', 'a:1:{s:62:"woocommerce-dynamic-gallery/wc_dynamic_gallery_woocommerce.php";i:1450753885;}', 'yes'),
 (128, 'woocommerce_default_country', 'JP:JP13', 'yes'),
 (129, 'woocommerce_allowed_countries', 'all', 'yes'),
@@ -393,7 +395,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (750, 'widget_woocommerce_recently_viewed_products', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
 (751, 'widget_woocommerce_recent_reviews', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
 (752, 'widget_woocommerce_top_rated_products', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
-(758, '_transient_orders-transient-version', '1451369335', 'yes'),
+(758, '_transient_orders-transient-version', '1451885246', 'yes'),
 (760, '_transient_all_the_cool_cats', '1', 'yes'),
 (807, 'site_icon', '0', 'yes'),
 (808, 'medium_large_size_w', '768', 'yes'),
@@ -404,7 +406,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (829, 'woocommerce_db_version', '2.4.10', 'yes'),
 (830, 'woocommerce_version', '2.4.10', 'yes'),
 (831, 'woocommerce_admin_notices', 'a:0:{}', 'yes'),
-(832, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.4.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.4.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.4-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.4-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.4";s:7:"version";s:3:"4.4";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":12:{s:8:"response";s:10:"autoupdate";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.4.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.4.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.4-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.4-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.4";s:7:"version";s:3:"4.4";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";s:13:"support_email";s:26:"updatehelp42@wordpress.org";s:9:"new_files";s:1:"1";}}s:12:"last_checked";i:1451366892;s:15:"version_checked";s:5:"4.3.1";s:12:"translations";a:0:{}}', 'yes'),
+(832, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:3:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.4.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.4.1.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.4.1-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.4.1-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.4.1";s:7:"version";s:5:"4.4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":12:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.4.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.4.1.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.4.1-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.4.1-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.4.1";s:7:"version";s:5:"4.4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";s:13:"support_email";s:26:"updatehelp42@wordpress.org";s:9:"new_files";s:1:"1";}i:2;O:8:"stdClass":12:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.3.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.3.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.3.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.3.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.3.2-partial-1.zip";s:8:"rollback";s:70:"https://downloads.wordpress.org/release/wordpress-4.3.2-rollback-1.zip";}s:7:"current";s:5:"4.3.2";s:7:"version";s:5:"4.3.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:5:"4.3.1";s:13:"support_email";s:26:"updatehelp42@wordpress.org";s:9:"new_files";s:0:"";}}s:12:"last_checked";i:1452149401;s:15:"version_checked";s:5:"4.3.1";s:12:"translations";a:0:{}}', 'yes'),
 (833, '_transient_wc_attribute_taxonomies', 'a:0:{}', 'yes'),
 (851, 'can_compress_scripts', '1', 'yes'),
 (912, 'product_cat_children', 'a:0:{}', 'yes'),
@@ -499,8 +501,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1192, '_transient_wc_tax_rates_339c7a9edd2f5f67dfdd8bebf2849487', 'a:0:{}', 'no'),
 (1193, '_transient_timeout_wc_tax_rates_432a66cc71404283464acda8291c9ab3', '1451890334', 'no'),
 (1194, '_transient_wc_tax_rates_432a66cc71404283464acda8291c9ab3', 'a:0:{}', 'no'),
-(1195, '_transient_timeout_wc_ship_65361226668837ee5a3417ed76d405da', '1451289134', 'no'),
-(1196, '_transient_wc_ship_65361226668837ee5a3417ed76d405da', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1206, '_transient_timeout_wc_ship_e43404a4e91009554e1208aa6729fc74', '1451290575', 'no'),
 (1207, '_transient_wc_ship_e43404a4e91009554e1208aa6729fc74', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1208, '_transient_timeout_wc_ship_7c46ab7ee48fb8c4404915c77ec2a196', '1451290576', 'no'),
@@ -531,8 +531,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1250, '_transient_wc_ship_625e698225714e1321f402915fa5053a', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1251, '_transient_timeout_wc_ship_ebe96d9c1c1fff30ec5b0800411bc583', '1451355438', 'no'),
 (1252, '_transient_wc_ship_ebe96d9c1c1fff30ec5b0800411bc583', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
-(1253, '_transient_timeout_external_ip_address_127.0.0.1', '1451957612', 'no'),
-(1254, '_transient_external_ip_address_127.0.0.1', '222.127.119.225', 'no'),
 (1261, '_transient_timeout_wc_tax_rates_e7973c610b4debc77d6d556565a9463f', '1451957633', 'no'),
 (1262, '_transient_wc_tax_rates_e7973c610b4debc77d6d556565a9463f', 'a:0:{}', 'no'),
 (1265, '_transient_timeout_feed_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1451396044', 'no');
@@ -567,21 +565,15 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1296, '_transient_wc_ship_a832a9ca967f1f41da13b611459e0410', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1297, '_transient_timeout_wc_ship_ae7f64df20ef52364c6651f9700bc45a', '1451358276', 'no'),
 (1298, '_transient_wc_ship_ae7f64df20ef52364c6651f9700bc45a', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
-(1303, '_site_transient_timeout_theme_roots', '1451368695', 'yes'),
-(1304, '_site_transient_theme_roots', 'a:1:{s:13:"twentyfifteen";s:7:"/themes";}', 'yes'),
-(1305, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1451366906;s:7:"checked";a:1:{s:13:"twentyfifteen";s:0:"";}s:8:"response";a:1:{s:13:"twentyfifteen";a:4:{s:5:"theme";s:13:"twentyfifteen";s:11:"new_version";s:3:"1.4";s:3:"url";s:43:"https://wordpress.org/themes/twentyfifteen/";s:7:"package";s:59:"https://downloads.wordpress.org/theme/twentyfifteen.1.4.zip";}}s:12:"translations";a:0:{}}', 'yes');
-INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1306, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1451366902;s:8:"response";a:3:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.6";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.6.zip";}s:27:"woocommerce/woocommerce.php";O:8:"stdClass":6:{s:2:"id";s:5:"25331";s:4:"slug";s:11:"woocommerce";s:6:"plugin";s:27:"woocommerce/woocommerce.php";s:11:"new_version";s:6:"2.4.12";s:3:"url";s:42:"https://wordpress.org/plugins/woocommerce/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/woocommerce.2.4.12.zip";}s:62:"woocommerce-dynamic-gallery/wc_dynamic_gallery_woocommerce.php";O:8:"stdClass":7:{s:2:"id";s:5:"33076";s:4:"slug";s:27:"woocommerce-dynamic-gallery";s:6:"plugin";s:62:"woocommerce-dynamic-gallery/wc_dynamic_gallery_woocommerce.php";s:11:"new_version";s:5:"1.5.0";s:3:"url";s:58:"https://wordpress.org/plugins/woocommerce-dynamic-gallery/";s:7:"package";s:70:"https://downloads.wordpress.org/plugin/woocommerce-dynamic-gallery.zip";s:14:"upgrade_notice";s:135:"Feature Upgrade. 5 new features plus 6 code tweaks and 2 bug fixes for full compatibility with WordPress v 4.4 and WooCommerce v 2.4.12";}}s:12:"translations";a:0:{}s:9:"no_update";a:3:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"4.3.1";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/contact-form-7.4.3.1.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}s:67:"woocommerce-simple-registration/woocommerce-simple-registration.php";O:8:"stdClass":6:{s:2:"id";s:5:"56191";s:4:"slug";s:31:"woocommerce-simple-registration";s:6:"plugin";s:67:"woocommerce-simple-registration/woocommerce-simple-registration.php";s:11:"new_version";s:5:"1.0.1";s:3:"url";s:62:"https://wordpress.org/plugins/woocommerce-simple-registration/";s:7:"package";s:80:"https://downloads.wordpress.org/plugin/woocommerce-simple-registration.1.0.1.zip";}}}', 'yes'),
 (1307, '_transient_timeout_wc_tax_rates_8979525c55347a9dc59034144506a079', '1451973917', 'no'),
 (1308, '_transient_wc_tax_rates_8979525c55347a9dc59034144506a079', 'a:0:{}', 'no'),
 (1309, '_transient_timeout_wc_ship_4fe92ec24500df0fa2057844f666408f', '1451372721', 'no'),
 (1310, '_transient_wc_ship_4fe92ec24500df0fa2057844f666408f', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1311, '_transient_timeout_wc_ship_2c785f9bf4b7959a0e9ce6bd95bd4cb3', '1451372728', 'no'),
-(1312, '_transient_wc_ship_2c785f9bf4b7959a0e9ce6bd95bd4cb3', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
+(1312, '_transient_wc_ship_2c785f9bf4b7959a0e9ce6bd95bd4cb3', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no');
+INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1317, '_transient_timeout_wc_term_counts', '1453961286', 'no'),
 (1318, '_transient_wc_term_counts', 'a:2:{i:6;s:1:"1";i:9;s:1:"4";}', 'no'),
-(1319, '_wc_session_4', 'a:6:{s:21:"removed_cart_contents";s:6:"a:0:{}";s:10:"wc_notices";N;s:23:"chosen_shipping_methods";s:30:"a:1:{i:0;s:12:"local_pickup";}";s:22:"shipping_method_counts";s:14:"a:1:{i:0;i:1;}";s:21:"chosen_payment_method";s:6:"cheque";s:8:"customer";s:447:"a:14:{s:8:"postcode";s:4:"6014";s:4:"city";s:4:"Cebu";s:9:"address_1";s:22:"346 Tabuk Mandaue City";s:9:"address_2";s:0:"";s:5:"state";s:3:"CEB";s:7:"country";s:2:"PH";s:17:"shipping_postcode";s:4:"6014";s:13:"shipping_city";s:4:"Cebu";s:18:"shipping_address_1";s:22:"346 Tabuk Mandaue City";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:3:"CEB";s:16:"shipping_country";s:2:"PH";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:0;}";}', 'no'),
-(1320, '_wc_session_expires_4', '1451542101', 'no'),
 (1321, '_transient_timeout_wc_uf_pid_6d4995f66cb2475abdbc93cd418b4aa8', '1453961305', 'no'),
 (1322, '_transient_wc_uf_pid_6d4995f66cb2475abdbc93cd418b4aa8', 'a:1:{i:0;i:10;}', 'no'),
 (1323, '_transient_timeout_wc_uf_pid_d8fdbfd8faf4fdfbbed76bad6dc9253f', '1453961309', 'no'),
@@ -589,7 +581,19 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1325, '_transient_timeout_wc_ship_52ca98128a6a26609770be8ae198352c', '1451372919', 'no'),
 (1326, '_transient_wc_ship_52ca98128a6a26609770be8ae198352c', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
 (1327, '_transient_timeout_wc_ship_63bc48c3565ba46b2f59686ac7201202', '1451372928', 'no'),
-(1328, '_transient_wc_ship_63bc48c3565ba46b2f59686ac7201202', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no');
+(1328, '_transient_wc_ship_63bc48c3565ba46b2f59686ac7201202', 'a:1:{s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
+(1343, '_transient_timeout_wc_ship_3eb346b258ba905a11059acf01928075', '1451888832', 'no'),
+(1344, '_transient_wc_ship_3eb346b258ba905a11059acf01928075', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
+(1345, '_transient_timeout_wc_ship_65361226668837ee5a3417ed76d405da', '1451888835', 'no'),
+(1346, '_transient_wc_ship_65361226668837ee5a3417ed76d405da', 'a:2:{s:9:"flat_rate";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:9:"flat_rate";s:5:"label";s:9:"Flat Rate";s:4:"cost";i:5;s:5:"taxes";a:0:{}s:9:"method_id";s:9:"flat_rate";}s:12:"local_pickup";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:12:"local_pickup";s:5:"label";s:12:"Local Pickup";s:4:"cost";s:1:"0";s:5:"taxes";a:0:{}s:9:"method_id";s:12:"local_pickup";}}', 'no'),
+(1359, '_transient_timeout_external_ip_address_127.0.0.1', '1452574860', 'no'),
+(1360, '_transient_external_ip_address_127.0.0.1', '222.127.119.225', 'no'),
+(1367, '_wc_session_4', 'a:20:{s:4:"cart";s:6:"a:0:{}";s:15:"applied_coupons";s:6:"a:0:{}";s:23:"coupon_discount_amounts";s:6:"a:0:{}";s:27:"coupon_discount_tax_amounts";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:19:"cart_contents_total";i:0;s:20:"cart_contents_weight";i:0;s:19:"cart_contents_count";i:0;s:5:"total";i:0;s:8:"subtotal";i:0;s:15:"subtotal_ex_tax";i:0;s:9:"tax_total";i:0;s:5:"taxes";s:6:"a:0:{}";s:14:"shipping_taxes";s:6:"a:0:{}";s:13:"discount_cart";i:0;s:17:"discount_cart_tax";i:0;s:14:"shipping_total";i:0;s:18:"shipping_tax_total";i:0;s:9:"fee_total";i:0;s:4:"fees";s:6:"a:0:{}";}', 'no'),
+(1368, '_wc_session_expires_4', '1452300827', 'no'),
+(1371, '_site_transient_timeout_theme_roots', '1452151211', 'yes'),
+(1372, '_site_transient_theme_roots', 'a:1:{s:13:"twentyfifteen";s:7:"/themes";}', 'yes'),
+(1373, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1452149435;s:7:"checked";a:1:{s:13:"twentyfifteen";s:0:"";}s:8:"response";a:1:{s:13:"twentyfifteen";a:4:{s:5:"theme";s:13:"twentyfifteen";s:11:"new_version";s:3:"1.4";s:3:"url";s:43:"https://wordpress.org/themes/twentyfifteen/";s:7:"package";s:59:"https://downloads.wordpress.org/theme/twentyfifteen.1.4.zip";}}s:12:"translations";a:0:{}}', 'yes'),
+(1374, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1452149425;s:8:"response";a:3:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.7";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.7.zip";}s:27:"woocommerce/woocommerce.php";O:8:"stdClass":6:{s:2:"id";s:5:"25331";s:4:"slug";s:11:"woocommerce";s:6:"plugin";s:27:"woocommerce/woocommerce.php";s:11:"new_version";s:6:"2.4.12";s:3:"url";s:42:"https://wordpress.org/plugins/woocommerce/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/woocommerce.2.4.12.zip";}s:62:"woocommerce-dynamic-gallery/wc_dynamic_gallery_woocommerce.php";O:8:"stdClass":7:{s:2:"id";s:5:"33076";s:4:"slug";s:27:"woocommerce-dynamic-gallery";s:6:"plugin";s:62:"woocommerce-dynamic-gallery/wc_dynamic_gallery_woocommerce.php";s:11:"new_version";s:5:"1.7.0";s:3:"url";s:58:"https://wordpress.org/plugins/woocommerce-dynamic-gallery/";s:7:"package";s:70:"https://downloads.wordpress.org/plugin/woocommerce-dynamic-gallery.zip";s:14:"upgrade_notice";s:155:"Major Feature Upgrade. 6 new features including massive admin panel UI and UX upgrade plus a3 Dynamic gallery meta moved into WooCommerce Product Data menu";}}s:12:"translations";a:0:{}s:9:"no_update";a:3:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"4.3.1";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/contact-form-7.4.3.1.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}s:67:"woocommerce-simple-registration/woocommerce-simple-registration.php";O:8:"stdClass":6:{s:2:"id";s:5:"56191";s:4:"slug";s:31:"woocommerce-simple-registration";s:6:"plugin";s:67:"woocommerce-simple-registration/woocommerce-simple-registration.php";s:11:"new_version";s:5:"1.0.1";s:3:"url";s:62:"https://wordpress.org/plugins/woocommerce-simple-registration/";s:7:"package";s:80:"https://downloads.wordpress.org/plugin/woocommerce-simple-registration.1.0.1.zip";}}}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -605,7 +609,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=594 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=633 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -829,7 +833,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (263, 50, '_thumbnail_id', '51'),
 (264, 50, '_visibility', 'visible'),
 (265, 50, '_stock_status', 'instock'),
-(266, 50, 'total_sales', '1'),
+(266, 50, 'total_sales', '2'),
 (267, 50, '_downloadable', 'no'),
 (268, 50, '_virtual', 'no'),
 (269, 50, '_regular_price', '70'),
@@ -850,7 +854,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (284, 50, '_sold_individually', ''),
 (285, 50, '_manage_stock', 'yes'),
 (286, 50, '_backorders', 'no'),
-(287, 50, '_stock', '99'),
+(287, 50, '_stock', '98'),
 (288, 50, '_upsell_ids', 'a:0:{}'),
 (289, 50, '_crosssell_ids', 'a:0:{}'),
 (290, 50, '_product_version', '2.4.10'),
@@ -1156,7 +1160,46 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (590, 64, '_order_shipping_tax', '0'),
 (591, 64, '_order_total', '65.00'),
 (592, 64, '_recorded_sales', 'yes'),
-(593, 64, '_order_stock_reduced', '1');
+(593, 64, '_order_stock_reduced', '1'),
+(594, 65, '_order_key', 'wc_order_568a02bcc36a4'),
+(595, 65, '_order_currency', 'JPY'),
+(596, 65, '_prices_include_tax', 'no'),
+(597, 65, '_customer_ip_address', '127.0.0.1'),
+(598, 65, '_customer_user_agent', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:43.0) Gecko/20100101 Firefox/43.0'),
+(599, 65, '_customer_user', '4'),
+(600, 65, '_created_via', 'checkout'),
+(601, 65, '_order_version', '2.4.10'),
+(602, 65, '_order_shipping', '5'),
+(603, 65, '_billing_first_name', 'Carlo'),
+(604, 65, '_billing_last_name', 'Jacaban'),
+(605, 65, '_billing_company', 'BDO'),
+(606, 65, '_billing_email', 'carloc@gmail.com'),
+(607, 65, '_billing_phone', '0923252162'),
+(608, 65, '_billing_country', 'PH'),
+(609, 65, '_billing_address_1', '346 Tabuk Mandaue City'),
+(610, 65, '_billing_address_2', ''),
+(611, 65, '_billing_city', 'Cebu'),
+(612, 65, '_billing_state', 'CEB'),
+(613, 65, '_billing_postcode', '6014'),
+(614, 65, '_shipping_first_name', 'Carlo'),
+(615, 65, '_shipping_last_name', 'Jacaban'),
+(616, 65, '_shipping_company', 'BDO'),
+(617, 65, '_shipping_country', 'PH'),
+(618, 65, '_shipping_address_1', '346 Tabuk Mandaue City'),
+(619, 65, '_shipping_address_2', ''),
+(620, 65, '_shipping_city', 'Cebu'),
+(621, 65, '_shipping_state', 'CEB'),
+(622, 65, '_shipping_postcode', '6014'),
+(623, 65, '_payment_method', 'cod'),
+(624, 65, '_payment_method_title', 'Cash on Delivery'),
+(625, 65, '_cart_discount', '0'),
+(626, 65, '_cart_discount_tax', '0'),
+(627, 65, '_order_tax', '0'),
+(628, 65, '_order_shipping_tax', '0'),
+(629, 65, '_order_total', '75.00'),
+(630, 65, '_download_permissions_granted', '1'),
+(631, 65, '_recorded_sales', 'yes'),
+(632, 65, '_order_stock_reduced', '1');
 
 -- --------------------------------------------------------
 
@@ -1193,7 +1236,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=65 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=66 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -1240,15 +1283,13 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (53, 1, '2015-12-22 06:29:00', '2015-12-22 06:29:00', '', 'm&m', '', 'inherit', 'open', 'closed', '', 'mm', '', '', '2015-12-22 06:29:00', '2015-12-22 06:29:00', '', 52, 'http://localhost/buyma_wp/wp-content/uploads/2015/12/mm.jpeg', 0, 'attachment', 'image/jpeg', 0),
 (54, 1, '2015-12-22 06:31:05', '2015-12-22 06:31:05', '<span class="a-list-item">Skittles Original</span>', 'Skittles Original', '', 'publish', 'open', 'closed', '', 'skittles-original', '', '', '2015-12-22 06:32:20', '2015-12-22 06:32:20', '', 0, 'http://localhost/buyma_wp/?post_type=product&#038;p=54', 0, 'product', '', 0),
 (55, 1, '2015-12-22 06:31:00', '2015-12-22 06:31:00', '', 'skittles', '', 'inherit', 'open', 'closed', '', 'skittles', '', '', '2015-12-22 06:31:00', '2015-12-22 06:31:00', '', 54, 'http://localhost/buyma_wp/wp-content/uploads/2015/12/skittles.jpg', 0, 'attachment', 'image/jpeg', 0),
-(56, 1, '2015-12-28 02:25:40', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2015-12-28 02:25:40', '0000-00-00 00:00:00', '', 0, 'http://localhost/buyma_wp/?post_type=product&p=56', 0, 'product', '', 0),
-(57, 1, '2015-12-28 02:26:41', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2015-12-28 02:26:41', '0000-00-00 00:00:00', '', 0, 'http://localhost/buyma_wp/?post_type=product&p=57', 0, 'product', '', 0),
 (58, 1, '2015-12-28 06:51:30', '2015-12-28 06:51:30', '', 'Order &ndash; December 28, 2015 @ 06:51 AM', '', 'wc-completed', 'open', 'closed', 'order_5680dbf24ccec', 'order-dec-28-2015-0651-am', '', '', '2015-12-29 01:34:14', '2015-12-29 01:34:14', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=58', 0, 'shop_order', '', 2),
 (59, 1, '2015-12-28 08:59:10', '2015-12-28 08:59:10', '', 'Order &ndash; December 28, 2015 @ 08:59 AM', '', 'wc-completed', 'open', 'closed', 'order_5680f9deab72d', 'order-dec-28-2015-0859-am', '', '', '2015-12-29 01:34:13', '2015-12-29 01:34:13', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=59', 0, 'shop_order', '', 2),
 (60, 1, '2015-12-29 01:28:17', '2015-12-29 01:28:17', '', 'Order &ndash; December 29, 2015 @ 01:28 AM', '', 'wc-completed', 'open', 'closed', 'order_5681e1b16addd', 'order-dec-29-2015-0128-am', '', '', '2015-12-29 01:34:02', '2015-12-29 01:34:02', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=60', 0, 'shop_order', '', 4),
 (61, 1, '2015-12-29 01:35:50', '2015-12-29 01:35:50', '', 'Order &ndash; December 29, 2015 @ 01:35 AM', '', 'wc-on-hold', 'open', 'closed', 'order_5681e376a32ca', 'order-dec-29-2015-0135-am', '', '', '2015-12-29 01:35:50', '2015-12-29 01:35:50', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=61', 0, 'shop_order', '', 1),
 (62, 1, '2015-12-29 02:12:54', '2015-12-29 02:12:54', '', 'Order &ndash; December 29, 2015 @ 02:12 AM', '', 'wc-on-hold', 'open', 'closed', 'order_5681ec26d0061', 'order-dec-29-2015-0212-am', '', '', '2015-12-29 02:12:55', '2015-12-29 02:12:55', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=62', 0, 'shop_order', '', 1),
-(63, 1, '2015-12-29 06:06:11', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-12-29 06:06:11', '0000-00-00 00:00:00', '', 0, 'http://localhost/buyma_wp/?p=63', 0, 'post', '', 0),
-(64, 1, '2015-12-29 06:08:53', '2015-12-29 06:08:53', '', 'Order &ndash; December 29, 2015 @ 06:08 AM', '', 'wc-on-hold', 'open', 'closed', 'order_568223753d391', 'order-dec-29-2015-0608-am', '', '', '2015-12-29 06:08:53', '2015-12-29 06:08:53', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=64', 0, 'shop_order', '', 2);
+(64, 1, '2015-12-29 06:08:53', '2015-12-29 06:08:53', '', 'Order &ndash; December 29, 2015 @ 06:08 AM', '', 'wc-on-hold', 'open', 'closed', 'order_568223753d391', 'order-dec-29-2015-0608-am', '', '', '2015-12-29 06:08:53', '2015-12-29 06:08:53', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=64', 0, 'shop_order', '', 2),
+(65, 1, '2016-01-04 05:27:24', '2016-01-04 05:27:24', '', 'Order &ndash; January 4, 2016 @ 05:27 AM', '', 'wc-processing', 'open', 'closed', 'order_568a02bcb216e', 'order-jan-04-2016-0527-am', '', '', '2016-01-04 05:27:24', '2016-01-04 05:27:24', '', 0, 'http://localhost/buyma_wp/?post_type=shop_order&#038;p=65', 0, 'shop_order', '', 2);
 
 -- --------------------------------------------------------
 
@@ -1395,7 +1436,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=128 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=130 ;
 
 --
 -- Dumping data for table `wp_usermeta`
@@ -1485,7 +1526,8 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (119, 4, 'paying_customer', '1'),
 (120, 4, '_money_spent', '370'),
 (121, 4, '_order_count', '4'),
-(127, 4, 'session_tokens', 'a:1:{s:64:"aa7c05cfd216fee90174f96abdc47cd677ba2548317c27f89f61ca9fd6f340a7";a:4:{s:10:"expiration";i:1452578900;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:74:"Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1451369300;}}');
+(128, 4, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:0:{}}'),
+(129, 4, 'session_tokens', 'a:1:{s:64:"3509c8dbe7adcc5c201e03c5c3b913abdbf41216698c09abcc071ebf885213c5";a:4:{s:10:"expiration";i:1453337626;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:74:"Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452128026;}}');
 
 -- --------------------------------------------------------
 
@@ -1594,7 +1636,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_itemmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `order_item_id` (`order_item_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=91 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=103 ;
 
 --
 -- Dumping data for table `wp_woocommerce_order_itemmeta`
@@ -1690,7 +1732,19 @@ INSERT INTO `wp_woocommerce_order_itemmeta` (`meta_id`, `order_item_id`, `meta_k
 (87, 13, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
 (88, 14, 'method_id', 'local_pickup'),
 (89, 14, 'cost', '0'),
-(90, 14, 'taxes', 'a:0:{}');
+(90, 14, 'taxes', 'a:0:{}'),
+(91, 15, '_qty', '1'),
+(92, 15, '_tax_class', ''),
+(93, 15, '_product_id', '50'),
+(94, 15, '_variation_id', '0'),
+(95, 15, '_line_subtotal', '70'),
+(96, 15, '_line_total', '70'),
+(97, 15, '_line_subtotal_tax', '0'),
+(98, 15, '_line_tax', '0'),
+(99, 15, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(100, 16, 'method_id', 'flat_rate'),
+(101, 16, 'cost', '5'),
+(102, 16, 'taxes', 'a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -1705,7 +1759,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_items` (
   `order_id` bigint(20) NOT NULL,
   PRIMARY KEY (`order_item_id`),
   KEY `order_id` (`order_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `wp_woocommerce_order_items`
@@ -1725,7 +1779,9 @@ INSERT INTO `wp_woocommerce_order_items` (`order_item_id`, `order_item_name`, `o
 (11, 'M & M', 'line_item', 62),
 (12, 'Local Pickup', 'shipping', 62),
 (13, 'M & M', 'line_item', 64),
-(14, 'Local Pickup', 'shipping', 64);
+(14, 'Local Pickup', 'shipping', 64),
+(15, 'Hershey', 'line_item', 65),
+(16, 'Flat Rate', 'shipping', 65);
 
 -- --------------------------------------------------------
 
