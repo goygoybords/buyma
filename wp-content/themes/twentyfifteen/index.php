@@ -51,7 +51,7 @@ get_header(); ?>
 				</div>
 				<h2 class="top-bnr--ttl">
 					<a href="">
-						<img src="<?php bloginfo('template_url');?>/images/about.jpg" alt="What is BUYMA">
+						<img src="<?php bloginfo('template_url');?>/images/about.png" alt="What is BUYMA">
 					</a>
 				</h2>
 			</div>
