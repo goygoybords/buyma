@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header( ); ?>
 	
 	<div class="bmg-l-wrapper js-bmg-l-wrapper">
 			<div class="bmg-l-breadcrumbs">
@@ -80,5 +80,5 @@ get_header( 'shop' ); ?>
 		</div>
 	</div>
 
-<?php get_footer( 'shop' ); ?>
+<?php get_footer( ); ?>
 

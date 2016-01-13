@@ -23,6 +23,9 @@
 			<div class="sr-refine__main">
 				<div class="sr-refine__header">
 					<p>Refine</p>
+					<a class="sr-refine__clear-btn" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+						Clear All
+					</a>
 				</div>
 				<div class="sr-refine__category">
 					<h2 class="js-sr-refine__title">Product Category

@@ -22,29 +22,44 @@ get_header(); ?>
 				<h1 class="site-keyword">A new online personal shopping experience</h1>
 				<div class="top-bnr--devide2">
 					<div class="top-bnr--img">
-						<a href="">
+						<?php 
+							$prod_cat_args = array(
+							  'taxonomy'     => 'product_cat', //woocommerce
+							  'orderby'      => 'name',
+							  'empty'        => 0
+							);
+
+							$woo_categories = get_categories( $prod_cat_args );
+							foreach ( $woo_categories as $woo_cat ) 
+							{
+							    $woo_cat_id = $woo_cat->term_id; //category ID
+							    $woo_cat_name = $woo_cat->name; //category name
+							    $data = $woo_cat_id;
+							}
+						?>
+							<a href="<?php echo esc_url( get_term_link( 6, 'product_cat' ) ); ?> ">
 							<img src="<?php bloginfo('template_url');?>/images/cake.jpg" alt="CAKE">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="">
+						<a href=" <?php echo esc_url( get_term_link( 9, 'product_cat' ) ); ?> ">
 							<img src="<?php bloginfo('template_url');?>/images/sweets.jpg" alt="SWEETS">
 						</a>
 					</div>
 				</div>
 				<div class="top-bnr--devide3">
 					<div class="top-bnr--img">
-						<a href="">
+						<a href="<?php echo esc_url( get_term_link( 6, 'product_cat' ) ); ?> ">
 							<img src="<?php bloginfo('template_url');?>/images/gift.jpg" alt="GIFT">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="">
+						<a href="<?php echo esc_url( get_term_link( 6, 'product_cat' ) ); ?> ">
 							<img src="<?php bloginfo('template_url');?>/images/macaron.jpg" alt="MACARON">
 						</a>
 					</div>
 					<div class="top-bnr--img">
-						<a href="">
+						<a href="<?php echo esc_url( get_term_link( 6, 'product_cat' ) ); ?> ">
 							<img src="<?php bloginfo('template_url');?>/images/matcha.jpg" alt="MATCHA">
 						</a>
 					</div>

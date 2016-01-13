@@ -1,0 +1,481 @@
+.lang-select,.st-section {
+	margin-left:auto;
+	max-width:100%
+}
+html {
+	box-sizing:border-box
+}
+*,::after,::before {
+	box-sizing:inherit
+}
+@font-face {
+	font-family:istokweb_regular;
+	src:url(/assets/fonts/istokweb/istokweb-regular-webfont-bad40b3bfa.eot);
+	src:url(/assets/fonts/istokweb/istokweb-regular-webfont-bad40b3bfa.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/istokweb/istokweb-regular-webfont-a6b00856ea.woff) format("woff"),url(/assets/fonts/istokweb/istokweb-regular-webfont-bcaf1d252f.ttf) format("truetype"),url(/assets/fonts/istokweb/istokweb-regular-webfont-ec90a3a65e.svg#istokweb_regular) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:istokweb_bold;
+	src:url(/assets/fonts/istokweb/istokweb-bold-webfont-bbd289b62b.eot);
+	src:url(/assets/fonts/istokweb/istokweb-bold-webfont-bbd289b62b.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/istokweb/istokweb-bold-webfont-9a6b7bf241.woff) format("woff"),url(/assets/fonts/istokweb/istokweb-bold-webfont-7f295368d0.ttf) format("truetype"),url(/assets/fonts/istokweb/istokweb-bold-webfont-49a4cc1484.svg#istokweb_bold) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:Oswald-Regular;
+	src:url(/assets/fonts/oswald/oswald-regular-webfont-931609e844.eot);
+	src:url(/assets/fonts/oswald/oswald-regular-webfont-931609e844.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/oswald/oswald-regular-webfont-c63a279c04.woff) format("woff"),url(/assets/fonts/oswald/oswald-regular-webfont-79121d4c83.ttf) format("truetype"),url(/assets/fonts/oswald/oswald-regular-webfont-75fb13d0be.svg#oswaldregular) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:Oswald-Light;
+	src:url(/assets/fonts/oswald/oswald-light-webfont-88d02bd965.eot);
+	src:url(/assets/fonts/oswald/oswald-light-webfont-88d02bd965.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/oswald/oswald-light-webfont-5e4e799710.woff) format("woff"),url(/assets/fonts/oswald/oswald-light-webfont-326615ca34.ttf) format("truetype"),url(/assets/fonts/oswald/oswald-light-webfont-9c27c0cc07.svg#oswaldlight) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:Oswald-Bold;
+	src:url(/assets/fonts/oswald/oswald-bold-webfont-7bf87061b8.eot);
+	src:url(/assets/fonts/oswald/oswald-bold-webfont-7bf87061b8.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/oswald/oswald-bold-webfont-0cf8564d8a.woff) format("woff"),url(/assets/fonts/oswald/oswald-bold-webfont-aeed92ccac.ttf) format("truetype"),url(/assets/fonts/oswald/oswald-bold-webfont-5b7c81938e.svg#oswaldbold) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:MinionPro-Regular;
+	src:url(/assets/fonts/minion/minionpro-regular-6d9c4b8652.eot);
+	src:url(/assets/fonts/minion/minionpro-regular-6d9c4b8652.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/minion/minionpro-regular-d7f6126e46.woff) format("woff"),url(/assets/fonts/minion/minionpro-regular-10f6a18a64.ttf) format("truetype"),url(/assets/fonts/minion/minionpro-regular-cc6c1f1aaa.svg) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:icon;
+	src:url(/assets/fonts/icon/icomoon-c6e17a3218.eot?100);
+	src:url(/assets/fonts/icon/icomoon-c6e17a3218.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/icon/icomoon-127fe9ee78.woff?100) format("woff"),url(/assets/fonts/icon/icomoon-a04f8679c1.ttf?100) format("truetype"),url(/assets/fonts/icon/icomoon-9dc6f7772b.svg#icomoon?100) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+.lang-select {
+	margin-right:auto;
+	margin-bottom:2rem
+}
+.lang-select::after {
+	clear:both;
+	content:"";
+	display:table
+}
+.lang-select li {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:6.17215%
+}
+.aboutbuyma__section .aboutbuyma__feature>li::after,.aboutbuyma__section::after,.st-section::after {
+	display:table;
+	clear:both;
+	content:""
+}
+.lang-select li:last-child {
+	margin-right:0
+}
+@media screen and (max-width:768px) {
+	.lang-select li {
+		width:100%;
+		margin-bottom:1rem
+	}
+}
+.st-section {
+	background:#fff;
+	padding:3rem;
+	margin-right:auto
+}
+.st-section__main {
+	margin-bottom:2rem;
+	border-bottom:1px solid #e2e2e2
+}
+.st-section__main h3 {
+	font-size:1.6rem;
+	line-height:1.6
+}
+.st-section__main h3.terms-main-ttl {
+	font-size:2rem;
+	text-align:center;
+	margin:4rem 0
+}
+.st-section__main .bodytxt {
+	width:100%;
+	line-height:1.8;
+	margin:2rem 0
+}
+.st-section__main .boldtxt {
+	font-weight:700
+}
+.st-section__main .ittxt {
+	font-style:italic;
+	font-family:serif
+}
+.aboutbuyma__section,.aboutbuyma__section .aboutbuyma__ttl,.aboutbuyma__section .aboutbuyma__ttl--caption {
+	font-family:Oswald-Regular,sans-serif;
+	font-weight:300
+}
+.st-section__main ul {
+	margin:2rem 0;
+	font-size:1.3rem
+}
+.st-section__main ul li {
+	margin-bottom:1.5rem
+}
+.st-section__main ul.pointed li {
+	list-style:disc;
+	margin-left:2rem
+}
+.st-section__main ul.number--normal li {
+	list-style:decimal;
+	margin-left:2rem
+}
+.st-section__main ul.number--roman>li {
+	list-style:lower-roman;
+	margin-left:2rem
+}
+.st-section__main ul.number--alpha li {
+	list-style:lower-alpha;
+	margin-left:2rem
+}
+.st-section__main .movie {
+	width:100%;
+	text-align:center
+}
+.st-section__main .movie iframe {
+	width:640px;
+	height:360px
+}
+@media screen and (max-width:1024px) {
+	.st-section__main .movie iframe {
+		width:480px;
+		height:270px
+	}
+	.aboutbuyma__main {
+		max-width:100%;
+		margin:0 auto
+	}
+	.aboutbuyma__main::after {
+		clear:both;
+		content:"";
+		display:table
+	}
+}
+@media screen and (max-width:768px) {
+	.st-section__main .movie iframe {
+		width:320px;
+		height:180px
+	}
+}
+@media screen and (max-width:480px) {
+	.st-section__main .movie iframe {
+		width:100%;
+		height:100%
+	}
+}
+.aboutbuyma__main {
+	padding:3.5rem 1.5rem;
+	box-sizing:border-box;
+	width:980px;
+	margin:0 auto
+}
+.aboutbuyma__section {
+	background:#fff;
+	padding:1rem 3rem;
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto
+}
+.aboutbuyma__section .aboutbuyma__ttl {
+	font-size:2.4rem;
+	margin-bottom:3rem
+}
+.aboutbuyma__section .aboutbuyma__feature>li {
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5rem
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section .aboutbuyma__feature>li {
+		width:100%;
+		margin-bottom:4rem
+	}
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-img__wrap {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:31.76157%;
+	padding:0 0 0 1rem;
+	text-align:center
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-img__wrap:last-child {
+	margin-right:0
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-img__wrap img {
+	width:80%
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section .aboutbuyma__feature>li .feature-img__wrap {
+		width:100%;
+		padding:0
+	}
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-txt__wrap {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:65.88078%;
+	padding:3rem 0 0 2rem
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-txt__wrap:last-child {
+	margin-right:0
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section .aboutbuyma__feature>li .feature-txt__wrap {
+		float:left;
+		display:block;
+		margin-right:4.82916%;
+		width:100%;
+		padding:3rem 0 0
+	}
+	.aboutbuyma__section .aboutbuyma__feature>li .feature-txt__wrap:last-child {
+		margin-right:0
+	}
+}
+.aboutbuyma__section .aboutbuyma__feature>li .feature-txt__wrap li {
+	margin-bottom:1.5rem
+}
+.aboutbuyma__section.aboutbuyma__feature--ps {
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	background:url(/assets/images/contents/aboutbuyma/about_map-9bfb90b0e2.png) center no-repeat #fff;
+	padding:2rem;
+	text-align:center
+}
+.aboutbuyma__section .aboutbuyma__experience li {
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:3rem
+}
+.aboutbuyma__section .aboutbuyma__experience li::after {
+	clear:both;
+	content:"";
+	display:table
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section.aboutbuyma__feature--ps {
+		background-size:90%;
+		background-position:center top;
+		width:100%
+	}
+	.aboutbuyma__section .aboutbuyma__experience li {
+		font-size:1.6rem;
+		text-align:left;
+		border-bottom:1px solid #e2e2e2;
+		padding-bottom:3rem
+	}
+}
+.aboutbuyma__section .aboutbuyma__experience .image {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:14.70196%;
+	text-align:right
+}
+.aboutbuyma__section .aboutbuyma__experience .image:last-child {
+	margin-right:0
+}
+.aboutbuyma__section .aboutbuyma__experience .image img {
+	max-width:30%;
+	margin-top:.5rem
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section .aboutbuyma__experience .image {
+		float:left;
+		display:block;
+		margin-right:4.82916%;
+		width:12.64237%
+	}
+	.aboutbuyma__section .aboutbuyma__experience .image:last-child {
+		margin-right:0
+	}
+	.aboutbuyma__section .aboutbuyma__experience .image img {
+		max-width:100%;
+		margin-top:0
+	}
+}
+.aboutbuyma__section .aboutbuyma__experience .text {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:74.41059%;
+	text-align:left
+}
+.aboutbuyma__section .aboutbuyma__experience .text:last-child {
+	margin-right:0
+}
+@media screen and (max-width:768px) {
+	.aboutbuyma__section .aboutbuyma__experience .text {
+		float:left;
+		display:block;
+		margin-right:4.82916%;
+		width:82.52847%
+	}
+	.aboutbuyma__section .aboutbuyma__experience .text:last-child {
+		margin-right:0
+	}
+}
+.aboutbuyma__section .aboutbuyma__infomation {
+	border:1px solid #e2e2e2;
+	padding:1rem 2rem;
+	font-size:1.2rem;
+	margin-bottom:2rem
+}
+.aboutbuyma__section .aboutbuyma__ttl--caption {
+	text-align:center;
+	font-size:3rem;
+	margin-bottom:4rem
+}
+.aboutbuyma__section .keycolor-txt {
+	color:#ff3259
+}
+.help-expandlist li a,.help-expandlist li a:link,.help-expandlist li a:visited {
+	color:#303030;
+	text-decoration:none
+}
+.aboutbuyma__section .italic-txt {
+	font-style:italic
+}
+.aboutbuyma__section .point-txt {
+	font-weight:700;
+	letter-spacing:1px
+}
+.contact_mention--bold,.help-expandlist li a {
+	font-family:HelveticaNeue-Bold,istokweb_bold;
+	font-weight:400
+}
+.help-commonlist {
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0 3rem
+}
+.help-commonlist::after {
+	clear:both;
+	content:"";
+	display:table
+}
+.help-commonlist__section {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:31.76157%;
+	margin-top:2rem;
+	margin-bottom:4rem
+}
+.help-commonlist__section:last-child {
+	margin-right:0
+}
+@media screen and (max-width:1024px) {
+	.help-commonlist__section {
+		float:left;
+		display:block;
+		margin-right:2.84259%;
+		width:48.57871%
+	}
+	.help-commonlist__section:last-child {
+		margin-right:0
+	}
+}
+@media screen and (max-width:768px) {
+	.help-commonlist__section {
+		width:100%;
+		margin-bottom:2rem
+	}
+}
+.help-commonlist__section li {
+	margin-bottom:1rem
+}
+.help-expandlist {
+	margin-top:2rem
+}
+.help-expandlist li {
+	padding:1rem;
+	border-bottom:1px solid #e2e2e2
+}
+.help-expandlist li a {
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	transition:color .3s ease
+}
+.help-expandlist li a::after {
+	clear:both;
+	content:"";
+	display:table
+}
+.help-expandlist li a:active,.help-expandlist li a:hover {
+	text-decoration:underline;
+	color:#7d7d7d
+}
+.help-expandlist li a span {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:91.4702%
+}
+.help-expandlist li a span:last-child {
+	margin-right:0
+}
+.help-expandlist li a i {
+	float:left;
+	display:block;
+	margin-right:2.35765%;
+	width:6.17215%;
+	text-align:right
+}
+.help-expandlist li a i:last-child {
+	margin-right:0
+}
+.help-expandlist li .expander-content {
+	padding:2rem 0
+}
+.terms-chapter-ttl {
+	font-size:1.6rem;
+	margin-top:5rem
+}
+.indent-list {
+	margin-left:1rem
+}
+.data-list dd,.indent-list dd {
+	margin:1rem 0 2rem
+}
+.data-list dt {
+	float:left
+}
+.data-list dd {
+	display:inline-block
+}
+.contact_mention {
+	padding-bottom:2rem
+}
+.contact_mention--bold {
+	padding-bottom:.5rem
+}
+.contact_guideline--wrap {
+	padding:1rem;
+	margin-bottom:1rem
+}
+.contact_guideline {
+	padding-bottom:1rem
+}

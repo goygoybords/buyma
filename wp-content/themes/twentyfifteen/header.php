@@ -26,7 +26,12 @@
 		<link href="<?php bloginfo('template_url'); ?>/css/cart.css" type="text/css" rel="stylesheet" />
 	<?php } else if(is_product()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/item-detail.css" type="text/css" rel="stylesheet" />
+	<?php } else if(is_page( 75 ) ) { ?>
+		<link href="<?php bloginfo('template_url'); ?>/css/about.css" type="text/css" rel="stylesheet" />
 	<?php } ?>
+
+
+
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="shortcut icon" href="//www.birthday-press.com/favicon.ico" type="image/vnd.microsoft.icon">
 	<script src="<?php bloginfo('template_url');?>/js/application-bundle.js"></script>
@@ -46,7 +51,6 @@
 			</a>
 			<?php get_product_search_form(); //get_search_form(); ?>
 			<a class="bmg-l-header__list-btn js-header-list-btn" href="javascript:void(0);">
-				<!-- <i class="bmg-c-icon--list"></i> -->
 				<i class="fa fa-list fa-2x"></i>
 			</a>
 			<nav class="bmg-l-header__menu">

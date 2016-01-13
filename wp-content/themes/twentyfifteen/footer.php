@@ -13,38 +13,18 @@
 			<div class="bmg-l-footer__inner">
 				<div class="bmg-l-footer__nav">
 					<div class="bmg-l-footer__country">
-						<!-- <ul>
-							<li>
-								<a class="bmg-l-footer__flag js-user-location-modal" href="javascript:void(0);">
-									<img width="18" src="/assets/images/flag/phl-a2a1a5476b.png" alt="Philippines">Philippines
-								</a>
-							</li>
-							<li>
-								$USD
-								<a class="bmg-l-footer__country-edit js-user-location-modal" href="javascript:void(0);">EDIT</a>
-							</li>
-						</ul> -->
 					</div>
 					<nav class="verticalmenu">
 						<ul>
-							<li>
-								<a href="/aboutbuyma/">About BUYMA</a>
-							</li>
-							<li>
-								<a target="_blank" href="https://buyma-us.zendesk.com/">FAQ</a>
-							</li>
-							<li>
-								<a href="/contact/">Contact us</a>
-							</li>
+							<li><a href="<?php echo get_permalink(75); ?>">About BirthdayPress</a></li>
+							<li><a href="<?php echo get_permalink(75); ?>">FAQ</a></li>
+							<li><a href="">Contact us</a></li>
 						</ul>
 						<ul>
-							<li><a href="/terms/">Terms of Use</a></li>
-							<li><a href="/privacy/">Privacy Policy</a></li>
-							<li><a href="/notice_and_takedown/">Notice and Takedown Policy</a></li>
-							<li><a href="/tradelaw/">Mark based on specific trade law</a></li>
-							<li>
-								<a target="_blank" href="http://www.enigmo.co.jp/en/">enigmo</a>
-							</li>
+							<li><a href="">Terms of Use</a></li>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Notice and Takedown Policy</a></li>
+							<li><a href="">Mark based on specific trade law</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -73,7 +53,7 @@
 						</ul>
 					</nav>
 					<p>
-						<small>©2005 Enigmo Inc. All rights reserved.</small>
+						<small>©2016 BirthdayPress Inc. All rights reserved.</small>
 					</p>
 				</div>
 			</div>
