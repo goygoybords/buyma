@@ -16,6 +16,21 @@ body,fieldset{
 	white-space:nowrap
 }
 
+.quantity
+{
+	float: left;
+	margin-right: 10px;
+}
+.woocommerce .quantity .qty {
+    width: 3.631em;
+    text-align: center;
+    height: 33px;
+}
+.stock
+{
+	display: none;
+}
+
 html{
 	box-sizing:border-box;
 	font-family:sans-serif;
