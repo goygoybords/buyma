@@ -20,13 +20,14 @@
 	<link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="<?php bloginfo('template_url'); ?>/css/top-bundle.css" media="screen" rel="stylesheet">
+	
 	<?php if(is_shop() || is_product_category()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/shop.css" type="text/css" rel="stylesheet" />
 	<?php } else if(is_cart() || is_checkout()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/cart.css" type="text/css" rel="stylesheet" />
 	<?php } else if(is_product()) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/item-detail.css" type="text/css" rel="stylesheet" />
-	<?php } else if(is_page( 75 ) ) { ?>
+	<?php } else if(is_page( 75 ) || is_page(31) || is_page(83) || is_page(80) || is_page(85) || is_page(87) ) { ?>
 		<link href="<?php bloginfo('template_url'); ?>/css/about.css" type="text/css" rel="stylesheet" />
 	<?php } ?>
 
