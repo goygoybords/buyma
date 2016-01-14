@@ -65,7 +65,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<h2 class="top-bnr--ttl">
-					<a href="">
+					<a href="<?php echo get_permalink(75); ?>">
 						<img src="<?php bloginfo('template_url');?>/images/about.png" alt="What is BUYMA">
 					</a>
 				</h2>
@@ -73,17 +73,17 @@ get_header(); ?>
 			<div class="footer-bnr--wrap">
 				<div class="footer-bnr--devide3">
 					<div class="footer-bnr--img">
-						<a href="">
+						<a href="<?php echo get_permalink(75); ?>">
 							<img src="<?php bloginfo('template_url');?>/images/personal.jpg" alt="Personal Service">
 						</a>
 					</div>
 					<div class="footer-bnr--img">
-						<a href="">
+						<a href="<?php echo get_permalink(75); ?>">
 							<img src="<?php bloginfo('template_url');?>/images/global.jpg" alt="Global Shopping with Local Prices">
 						</a>
 					</div>
 					<div class="footer-bnr--img">
-						<a href="">
+						<a href="<?php echo get_permalink(75); ?>">
 							<img src="<?php bloginfo('template_url');?>/images/style.jpg" alt="Style Inspirations ">
 						</a>
 					</div>

@@ -13,10 +13,7 @@
 				</div>
 				<div class="bmg-l-layout--full__main">
 					<h1>Terms of Use</h1>
-					<ul class="lang-select">
-						<li>English</li>
-						<li><a href="/terms_j/">Japanese</a></li>
-					</ul>
+
 					<div class="st-section">
 						<h2>BUYMA TERMS AND CONDITIONS OF USE</h2>
 						<div class="st-section__main">

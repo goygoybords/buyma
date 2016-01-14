@@ -12,10 +12,7 @@ get_header(); ?>
 				</div>
 				<div class="bmg-l-layout--full__main">
 					<h1>Mark based on specific trade law</h1>
-					<ul class="lang-select">
-						<li>English</li>
-						<li><a href="/tradelaw_j/">Japanese</a></li>
-					</ul>
+					
 					<div class="st-section">
 						<h2>Statutory Notice in relation to Japanese Act on Specified Commercial Transactions</h2>
 						<div class="st-section__main">

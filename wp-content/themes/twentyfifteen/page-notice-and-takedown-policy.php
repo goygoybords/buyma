@@ -16,10 +16,7 @@ get_header(); ?>
 				</div>
 				<div class="bmg-l-layout--full__main">
 					<h1>Notice and Takedown Policy</h1>
-					<ul class="lang-select">
-						<li>English</li>
-						<li><a href="/notice_and_takedown_j/">Japanese</a></li>
-					</ul>
+					
 					<div class="st-section">
 						<h2>Notice of Claims of Intellectual Property Right Infringement</h2>
 						<div class="st-section__main">
