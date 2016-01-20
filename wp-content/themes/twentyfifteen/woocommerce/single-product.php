@@ -127,7 +127,7 @@ get_header();
 				</div>
 				<div class="item-section--r">
 					<div class="item-detail">
-						<!-- <h2 class="item-subttl">Reviews</h2> -->
+						<h2 class="item-subttl">Reviews</h2>
 						<div class="item-detail__section">
 							<div class="item-detail__shopper">
 								<div class="shopper-rate--wrap">
@@ -135,6 +135,9 @@ get_header();
 										 comments_template( 'single-product/review.php' ); 
 										//do_action( 'woocommerce_after_single_product_summary' ); 
 									?>
+								</div>
+								<div class="shopper__msg-btn">
+									<a href="<?php echo get_permalink(96); ?>" class="bmg-btn--secondary">Questions?</a>
 								</div>
 							</div>
 						</div>

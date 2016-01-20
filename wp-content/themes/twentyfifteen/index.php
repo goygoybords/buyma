@@ -65,8 +65,16 @@ get_header(); ?>
 					</div>
 				</div>
 				<h2 class="top-bnr--ttl">
+					<p>Bring more happiness to a place where emotion gather!</p>
+					<p>A mail order site of delivery cake,</p>
+					<p>BirthdayPRESS</p>
+					<p>
+						We are general mail order site of cake. We sell more than three thousand of sweets.
+						We have a variety of cakes powdered green tea, chiffon cakes, roll cakes, cheese cakes and so on!
+					</p>
+					<p>We will deliver cakes to your designated places such as your home, your workplace and your lodging place.</p>
 					<a href="<?php echo get_permalink(75); ?>">
-						<img src="<?php bloginfo('template_url');?>/images/about.png" alt="What is BUYMA">
+						<img src="<?php bloginfo('template_url');?>/images/bg.png" alt="What is BirthdayPress">
 					</a>
 				</h2>
 			</div>

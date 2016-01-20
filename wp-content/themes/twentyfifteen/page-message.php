@@ -42,7 +42,7 @@ get_header();
 					<h1><?php the_title(); ?></h1>
 					<div class="bmg-b-form">
 						<div class="bmg-b-form__main">
-							<?php wc_get_template( 'myaccount/my-orders.php', array( 'order_count' => $order_count ) ); ?>
+							
 						</div>
 					</div>
 				</div>

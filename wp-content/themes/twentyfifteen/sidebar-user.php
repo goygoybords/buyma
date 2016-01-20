@@ -16,6 +16,13 @@
 					</li>
 				</ul>	
 				<ul class="my-menu">
+					<li>
+						<a href="<?php echo get_permalink(96); ?>">
+							Message Box
+						</a>
+					</li>
+				</ul>
+				<ul class="my-menu">
 					<li><a href="<?php echo get_permalink(37); ?>">Order History</a></li>
 				</ul>
 				<ul class="my-menu">
