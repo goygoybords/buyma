@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * Mark Base page
+ *
+ *
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+
+
 get_header(); ?>
 		<div class="bmg-l-wrapper js-bmg-l-wrapper">
 			<div class="bmg-l-layout--full">

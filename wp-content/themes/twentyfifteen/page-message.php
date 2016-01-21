@@ -35,6 +35,7 @@ if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shippi
 $col = 1;
 get_header();
 ?>
+
 		<div class="bmg-l-wrapper js-bmg-l-wrapper">
 			<div class="bmg-l-layout--full my">
 				<?php get_sidebar('user');  ?>
@@ -42,7 +43,7 @@ get_header();
 					<h1><?php the_title(); ?></h1>
 					<div class="bmg-b-form">
 						<div class="bmg-b-form__main">
-							
+							<?php  echo do_shortcode('[contact-form-7 id="30" title="Contact"]');  ?>
 						</div>
 					</div>
 				</div>
