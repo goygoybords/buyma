@@ -43,7 +43,7 @@ get_header();
 					<h1><?php the_title(); ?></h1>
 					<div class="bmg-b-form">
 						<div class="bmg-b-form__main">
-							<?php  echo do_shortcode('[contact-form-7 id="30" title="Contact"]');  ?>
+							<?php echo do_shortcode('[contact-form-7 id="30" title="Contact"]');  ?>
 						</div>
 					</div>
 				</div>
