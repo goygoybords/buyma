@@ -20,33 +20,43 @@ get_currentuserinfo();
 ?>
 
 <?php wc_print_notices(); ?>
-
+	
 <?php if ( ! $load_address ) : ?>
 
 	<?php wc_get_template( 'myaccount/my-address.php' ); ?>
 
 <?php else : ?>
 
-	<form method="post">
-
+	<div class="bmg-l-wrapper js-bmg-l-wrapper" style = "padding-top:100px;">
+	<div class="bmg-l-layout--s">
 		<h3><?php echo apply_filters( 'woocommerce_my_account_edit_address_title', $page_title ); ?></h3>
+		<div class="bmg-b-form">
+			<div class="bmg-b-form__main">
+				<form method="post">
+				<fieldset>
+					<div class="bmg-b-form__control-group">
+						
+							<?php do_action( "woocommerce_before_edit_address_form_{$load_address}" ); ?>
+							<?php foreach ( $address as $key => $field ) : ?>
+								<?php woocommerce_form_field( $key, $field, ! empty( $_POST[ $key ] ) ? wc_clean( $_POST[ $key ] ) : $field['value'] ); ?>
+							<?php endforeach; ?>
+							<?php do_action( "woocommerce_after_edit_address_form_{$load_address}" ); ?>
+						
+					</div>
+				</fieldset>
+				<div class="bmg-b-form__submit-bottom--with-lead">
+				<div>&nbsp;</div>
+					<div>
+						<input type="submit" class=" bmg-btn--primary" name="save_address" value="<?php esc_attr_e( 'Save Address', 'woocommerce' ); ?>" />
+							<?php wp_nonce_field( 'woocommerce-edit_address' ); ?>
+						<input type="hidden" name="action" value="edit_address" />
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
-		<?php do_action( "woocommerce_before_edit_address_form_{$load_address}" ); ?>
-
-		<?php foreach ( $address as $key => $field ) : ?>
-
-			<?php woocommerce_form_field( $key, $field, ! empty( $_POST[ $key ] ) ? wc_clean( $_POST[ $key ] ) : $field['value'] ); ?>
-
-		<?php endforeach; ?>
-
-		<?php do_action( "woocommerce_after_edit_address_form_{$load_address}" ); ?>
-
-		<p>
-			<input type="submit" class="button" name="save_address" value="<?php esc_attr_e( 'Save Address', 'woocommerce' ); ?>" />
-			<?php wp_nonce_field( 'woocommerce-edit_address' ); ?>
-			<input type="hidden" name="action" value="edit_address" />
-		</p>
-
-	</form>
-
+	
 <?php endif; ?>
